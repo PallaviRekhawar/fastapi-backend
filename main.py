@@ -17,6 +17,7 @@ app.add_middleware(
         "https://fastapi-backend-ashen.vercel.app",
         "https://fastapi-backend.vercel.app",
         "https://pallavi-fastapi-backend.onrender.com",
+        "https://fastapi-backend-two-zeta.vercel.app"  
     ],
     allow_methods=["*"],
     allow_headers=["*"],
