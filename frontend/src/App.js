@@ -6,10 +6,8 @@ import Register from './components/Register';
 import StudentDashboard from './components/StudentDashboard';
 import './App.css';
 
-// Set base URL - change to your deployed backend URL when deploying
-axios.defaults.baseURL = 'http://localhost:8000';
+axios.defaults.baseURL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
 
-// Attach JWT token to every request automatically
 axios.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem('token');
