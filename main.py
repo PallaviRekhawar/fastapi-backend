@@ -14,9 +14,6 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",
-        "https://fastapi-backend-ashen.vercel.app",
-        "https://fastapi-backend.vercel.app",
-        "https://pallavi-fastapi-backend.onrender.com",
         "https://fastapi-backend-two-zeta.vercel.app"  
     ],
     allow_methods=["*"],
