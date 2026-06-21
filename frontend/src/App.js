@@ -6,7 +6,7 @@ import Register from './components/Register';
 import StudentDashboard from './components/StudentDashboard';
 import './App.css';
 
-axios.defaults.baseURL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
+axios.defaults.baseURL = process.env.REACT_APP_API_URL || 'https://fastapi-backend-wgz9.onrender.com';
 
 axios.interceptors.request.use(
   (config) => {
